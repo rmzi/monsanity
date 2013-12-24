@@ -1,24 +1,15 @@
 <head>
-  <title>elephantride</title>
+  <title>Monsanity</title>
 </head>
 
 <body>
-  {{> scrollorama}}
-  {{> overlay}}
-  <div class='container'>
-    {{> header}}
-    <br/>
-    {{> main-bottom}}
-  </div>
+  {{> monsanity}}
+  {{ scrollorama}}
+  {{ overlay}}
 </body>
 
-<template name="header">
-<!--   <br/>
-  <h1>ELEPHANT RIDE</h1>
-  <br/>
-  <div class="hi"></div>
-  <div id="hi1"></div>
-  <div id='elephant'></div> -->
+<template name='monsanity'>
+  monsanity
 </template>
 
 <template name='scrollorama'>
@@ -63,21 +54,6 @@
 
 </template>
 
-<template name='main-bottom'>
-  <div class='row'>
-    <div class='col-xs-5'>
-    </div>
-    <div class='col-xs-2'>
-      <!-- <button type="button" class="btn btn-default btn-lg" disabled="disabled">&nbsp;&nbsp;&nbsp;Watch Video&nbsp;&nbsp;&nbsp;</button> -->
-      <a data-toggle="modal" href="#myModal" style="display: none" id="watch-button" class="btn btn-primary btn-lg">&nbsp;&nbsp;&nbsp;Watch Video&nbsp;&nbsp;&nbsp;</a>
-    </div>
-    <div class='col-xs-5'>
-    </div>
-    {{> modal}}
-  </div>
-
-</template>
-
 <template name="overlay">
   <div id='overlay-test'>
     <div class='container'>
@@ -89,26 +65,4 @@
       </div>
     </div>
   </div>
-</template>
-
-<template name="modal">
-<!-- Button trigger modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-          <h4 class="modal-title">Modal title</h4>
-        </div>
-        <div class="modal-body">
-          VIMEO STUFF (time-10s) for background change
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
 </template>

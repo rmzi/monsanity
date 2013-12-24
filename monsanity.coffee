@@ -3,9 +3,13 @@ if Meteor.isClient
   Template.monsanity.rendered = ->
     $ ->
       BV = new $.BigVideo()
+      vids = ["movies/MONS_TITLE_SM.mov", "movies/MONS_TITLE_SM1.mov"]
+
       BV.init()
-      BV.show "http://vjs.zencdn.net/v/oceans.mp4",
+      BV.show vids,
         ambient: true
+
+
 
 
   Template.scrollorama.rendered = ->

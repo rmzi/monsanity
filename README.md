@@ -1,4 +1,4 @@
-elephantride
+Monsanity
 ============
 
-Elephant Ride Website for Brainfeeder Project
+Monsanity Website for RapGenius Project

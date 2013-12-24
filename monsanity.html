@@ -1,0 +1,114 @@
+<head>
+  <title>elephantride</title>
+</head>
+
+<body>
+  {{> scrollorama}}
+  {{> overlay}}
+  <div class='container'>
+    {{> header}}
+    <br/>
+    {{> main-bottom}}
+  </div>
+</body>
+
+<template name="header">
+<!--   <br/>
+  <h1>ELEPHANT RIDE</h1>
+  <br/>
+  <div class="hi"></div>
+  <div id="hi1"></div>
+  <div id='elephant'></div> -->
+</template>
+
+<template name='scrollorama'>
+<!--   <div id="examples-pin">
+    <div id="pin-frame-color" class="pin-frame"><h2>Color It</h2></div>
+  </div> -->
+
+  <div id='loading'>
+    <div class="animation"></div>
+  </div>
+
+  <div id='scrolldown'>
+    <h4>SCROLL DOWN<br/><span class="glyphicon glyphicon-chevron-down"></span></h4>
+  </div>
+
+  <div id='pin'>
+    <div id='one'>1</div>
+    <div id='two'>2</div>
+    <div id='three'>3</div>
+    <div id='four'>4</div>
+    <div id='five'>5</div>
+    <div id='six'>6</div>
+    <div id='seven'>7</div>
+    <div id='eight'>8</div>
+    <div id='nine'>9</div>
+    <div id='ten'>10</div>
+    <div id='eleven'>11</div>
+    <div id='twelve'>12</div>
+    <div id='e13'>13</div>
+    <div id='e14'>14</div>
+    <div id='e15'>15</div>
+    <div id='e16'>16</div>
+    <div id='e17'>17</div>
+    <div id='e18'>18</div>
+    <div id='e19'>19</div>
+    <div id='e20'>20</div>
+    <div id='e21'>21</div>
+    <div id='e22'>22</div>
+    <div id='e23'>23</div>
+    <div id='e24'>24</div>
+  </div>
+
+</template>
+
+<template name='main-bottom'>
+  <div class='row'>
+    <div class='col-xs-5'>
+    </div>
+    <div class='col-xs-2'>
+      <!-- <button type="button" class="btn btn-default btn-lg" disabled="disabled">&nbsp;&nbsp;&nbsp;Watch Video&nbsp;&nbsp;&nbsp;</button> -->
+      <a data-toggle="modal" href="#myModal" style="display: none" id="watch-button" class="btn btn-primary btn-lg">&nbsp;&nbsp;&nbsp;Watch Video&nbsp;&nbsp;&nbsp;</a>
+    </div>
+    <div class='col-xs-5'>
+    </div>
+    {{> modal}}
+  </div>
+
+</template>
+
+<template name="overlay">
+  <div id='overlay-test'>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-md-offset-1 col-md-10'>
+          <br/><br/><br/><br/>
+          <iframe src="//player.vimeo.com/video/76612986" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/76612986">It's paper</a> from <a href="http://vimeo.com/pingovanderb">Pingo van der Brinkloev</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="modal">
+<!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          VIMEO STUFF (time-10s) for background change
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</template>

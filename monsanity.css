@@ -1,0 +1,209 @@
+/* CSS declarations go here */
+body{
+  color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.pace {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 12px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 25px;
+  border: 2px solid #29d;
+  background-color: #fff;
+}
+
+.pace .pace-progress {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+
+  -webkit-transition: width 1s ease-in-out 1s linear;
+  -moz-transition: width 1s ease-in-out 1s linear;
+  -ms-transition: width 1s ease-in-out 1s linear;
+  -o-transition: width 1s ease-in-out 1s linear;
+  transition: width 1s ease-in-out 1s linear;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  max-width: 190px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  height: 15px;
+  font-size: 12px;
+  background: #29d;
+  color: #29d;
+  line-height: 60px;
+  font-weight: bold;
+  font-family:  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.pace .pace-progress:after {
+  content: attr(data-progress-text);
+  display: inline-block;
+}
+
+.pace.pace-inactive {
+  display: none;
+}
+
+
+#loading{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: #fff;
+}
+
+#scrolldown{
+  z-index: 20;
+  position: relative;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  text-align: center;
+}
+
+#pin{
+  height: 6000px;
+  width: 100%;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten, #eleven, #twelve, #e12, #e13, #e14, #e15, #e16, #e17, #e18, #e19, #e20, #e21, #e22, #e23, #e24{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#one{ z-index: 1;}
+#two{ z-index: 2;}
+#three{ z-index: 3;}
+#four{ z-index: 4;}
+#five{ z-index: 5;}
+#six{ z-index: 6;}
+#seven{ z-index: 7;}
+#eight{ z-index: 8;}
+#nine{ z-index: 9;}
+#ten{ z-index: 10;}
+#eleven{ z-index: 11;}
+#twelve{ z-index: 12;}
+#e13{ z-index: 13;}
+#e14{ z-index: 14;}
+#e15{ z-index: 15;}
+#e16{ z-index: 16;}
+#e17{ z-index: 17;}
+#e18{ z-index: 18;}
+#e19{ z-index: 19;}
+#e20{ z-index: 20;}
+#e21{ z-index: 21;}
+#e22{ z-index: 22;}
+#e23{ z-index: 23;}
+#e24{ z-index: 24;}
+
+
+#watch-button{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -60px;
+  margin-top: -23px;
+}
+
+#overlay-test{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #000; 
+  opacity: 0;
+  z-index: 25;
+}
+
+.animation{
+  width: 240px;
+  height: 135px;
+  background: url("/images/strip1.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -120px;
+  margin-top: -150px;
+
+  -webkit-animation: ele 1.2s steps(12) infinite;
+   -moz-animation: ele 1.2s steps(12) infinite;
+    -ms-animation: ele 1.2s steps(12) infinite;
+     -o-animation: ele 1.2s steps(12) infinite;
+        animation: ele 1.2s steps(12) infinite;
+}
+
+@-webkit-keyframes ele {
+   from { background-position:    0px; }
+     to { background-position: -2880px; }
+}
+
+@-webkit-keyframes ele {
+   from { background-position:    0px; }
+     to { background-position: -2880px; }
+}
+
+@-ms-keyframes ele {
+   from { background-position:    0px; }
+     to { background-position: -2880px; }
+}
+
+@-o-keyframes ele {
+   from { background-position:    0px; }
+     to { background-position: -2880px; }
+}
+
+@keyframes ele {
+   from { background-position:    0px; }
+     to { background-position: -2880px; }
+}

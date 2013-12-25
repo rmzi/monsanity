@@ -28,6 +28,23 @@ body{
   text-decoration: none;
 }
 
+.overrr{
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+#vid{
+  position: absolute;
+  top: 50%;
+  margin-top: -240px;
+  margin-left: 5%;
+}
+
 /* Effect 15: scale down, reveal */
 .cl-effect-15 a {
   color: rgba(0,0,0,0.2);

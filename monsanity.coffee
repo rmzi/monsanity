@@ -11,6 +11,17 @@ if Meteor.isClient
 
   Template.monsanity.events 
     "click #play": (e,t) ->
+      $(".overrr").animate
+        opacity: 1
+
+      $("#play").fadeOut()
+
+      # $cb = $(".overrr").fadeIn(1000, ->
+        
+      #   # this function will get executed when the animation is done 
+      #   $cb.css "z-index", 1
+      # )
+
       console.log e, t
       e.preventDefault()
       ringBell = new buzz.sound "/movies/laser.m4a"

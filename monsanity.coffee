@@ -6,8 +6,13 @@ if Meteor.isClient
       vids = ["movies/MONS_TITLE_SM.mov", "movies/MONS_TITLE_SM1.mov"]
 
       BV.init()
-      BV.show vids,
-        ambient: true
+      if Modernizr.touch
+        # BV.show "images/monsanity1.png"
+        $.backstretch "images/monsanity2.png"
+        $('#big-video-vid').hide()
+      else
+        BV.show vids,
+          ambient: true
 
   Template.monsanity.events 
     "click #play": (e,t) ->

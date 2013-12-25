@@ -28,6 +28,12 @@ body{
   text-decoration: none;
 }
 
+#parental{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 .overrr{
   background: #000;
   width: 100%;

@@ -9,6 +9,12 @@ if Meteor.isClient
       BV.show vids,
         ambient: true
 
+  Template.monsanity.events 
+    "click #play": (e,t) ->
+      console.log e, t
+      e.preventDefault()
+      ringBell = new buzz.sound "/movies/laser.m4a"
+      ringBell.play()
 
 
 

@@ -3,6 +3,24 @@ body{
   //color: #fff;
   overflow-y: scroll;
   overflow-x: hidden;
+  cursor: url(/images/feather3.png), auto;
+
+}
+
+#play{
+  background: #fff;
+  color: #cc2200;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  margin-left: -100px;
+  text-align: center;
+  font-size: 2em;
+  line-height: 100px;
+  cursor: url(/images/feather4.png), auto;
+  //cursor: url(images/feather.png), -moz-zoom-in, auto;
 }
 
 .pace {

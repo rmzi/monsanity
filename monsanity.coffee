@@ -13,6 +13,9 @@ if Meteor.isClient
     "click #play": (e,t) ->
       $(".overrr").animate
         opacity: 1
+      , 1000
+
+      $(".overrr").delay(1000).css('zIndex', '1')
 
       $("#play").fadeOut()
 

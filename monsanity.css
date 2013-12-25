@@ -8,8 +8,8 @@ body{
 }
 
 #play{
-  background: rgba(160, 6, 6, 0.82);
-  color: #FF9999;
+  //background: rgba(160, 6, 6, 0.82);
+  //color: #FF9999;
   height: 75px;
   width: 200px;
   position: absolute;
@@ -20,14 +20,38 @@ body{
   font-size: 2em;
   line-height: 75px;
   cursor: url(/images/feather6.png), auto;
-  //cursor: url(images/feather.png), -moz-zoom-in, auto;
+  -moz-border-radius: 40px;
+  //border-radius: 40px;
 }
 
 #play:hover{
-  color: #fff;
-  background: rgba(160, 6, 6, 1);
   text-decoration: none;
 }
+
+/* Effect 15: scale down, reveal */
+.cl-effect-15 a {
+  color: rgba(0,0,0,0.2);
+  font-weight: 700;
+  text-shadow: none;
+}
+
+.cl-effect-15 a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.cl-effect-15 a:hover::before,
+.cl-effect-15 a:focus::before {
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  transform: scale(0.9);
+  opacity: 0;
+}
+
 
 .pace {
   -webkit-box-sizing: border-box;

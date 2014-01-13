@@ -45,6 +45,14 @@ body{
   z-index: -1;
 }
 
+#mon-video{
+  position: absolute;
+  top: 50%;
+  margin-top: -320px;
+  margin-left: 5%;
+  padding: 0 5%;
+}
+
 #vid{
   position: absolute;
   top: 50%;
